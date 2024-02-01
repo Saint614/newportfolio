@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+              
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/>
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"/>
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"/>
+        <link rel="stylesheet" href="/css/portfolio-project.css">
+
+        <title>My Portfolio Project</title>  
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="align-self-center"> 
+                            <!-- This will eventually lead to my website, can't figure out how to remove underline, tried using css text-decoration:none -->
+                            <a href="#" target="_blank"><h1>Joshua St. Laurent</h1> </a>                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-3">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal" class="btn btn-sm bg-primary text-warning text-no-wrap">Join Newsletter</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar expand-sm navbar-dark bg-dark sticky-top">
+                <div class="container">
+                    <a class="navbar-brand" href="https://www.linkedin.com/in/joshua-st-laurent-02b273139/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" ></i></a>
+                    <a class="navbar-brand" href="https://twitter.com/saintdev614" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i> </a>
+                    <a class="navbar-brand" href="https://github.com/Saint614" target="_blank"><i class="fa-brands fa-github fa-2xl"></i> </a>
+                    <a class="navbar-brand" href="https:/codepen.io/Saint614" target="_blank"><i class="fa-brands fa-codepen fa-2xl"></i> </a>
+
+                </div>           
+        </nav>
+        <div id="newsletterModal" class="modal fade">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-warning">
+                        <h3 class="modal-title">Join my Newsletter</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" id="newsletterForm">
+                                <div class="row">
+                                    <div class="mb-3 col-12">
+                                        <label class="sr-only" for="newsletterEmail">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="newsletterEmail" name="newsletterEmail" placeholder="Enter your email">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="newsletterPermission" name="newsletterPermission">
+                                            <label class="form-check-label">Agree to sign up for newsletter</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Complete Signup</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <main class="container-fluid">
+            <div class="row row-content align-items-center">
+                <div class="col">
+                    <div class="align-self-center">                         
+                        <h2>About me</h2>
+                    </div>
+                </div>
+                <div class="row row-content">    
+                    <div class="col-12 col-md-3">
+                        <img class="rounded mx-auto d-block img-fluid" src="images/me.jpg" alt="This is a profile picture of a very handsome man">
+                    </div>
+                    <div class="col-12 col-md-6 align-self-center">
+                        
+                        <p>Hello Everyone!  My name is Joshua St. Laurent and I am an aspiring full stack developer. Although at this point my experience is minimal, I believe that I have the drive and work ethic to be constantly learning and bettering myself.  I hope to be able to continue to update this page as I learn more and more.</p>
+                        
+                    </div>
+                    <div class="col-12 col-md-3 align-self-center">
+                        <div class="btn-group-vertical" role="group">  
+
+                            <button type="button" class="btn btn-primary ">My Work</button> 
+                      
+                            <button type="button" class="btn btn-info">My Resume</button>
+                        </div>
+
+                    </div>
+
+                </div>   
+                
+            </div>
+          
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-tabs justify-content-center">
+                        <li class="nav-item"><a class="nav-link active" href="#ed" role="tab" data-bs-toggle="tab">Education</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#tic" role="tab" data-bs-toggle="tab">2016-Present</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#presleader" role="tab" data-bs-toggle="tab">2015-2016</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#presguide" role="tab" data-bs-toggle="tab">2012-2015</a> </li>
+                        
+                        
+                        
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#drop" role="button">Professional Background</a>
+                            <ul class="dropdown-menu" id="drop">
+                                <li><a class="dropdown-item" href="#tic">2016-Present</a> </li>
+                                <li><a class="dropdown-item" href="#presleader">2015-2016</a> </li>
+                                <li><a class="dropdown-item" href="#presguide">2012-2015</a></li>
+                            </ul>
+                        </li>                           -->
+                    </ul>                  
+                </div>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade" id="ed">
+                        <div class="table-sm">
+                            <table class="table bg-dark">
+                                <tr class="table-success">
+                                    <td>Bridgewater State University</td>
+                                    <td>Bachelor of Arts in History</td>
+                                    <td>2015</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>  
+                    <div role="tabpanel" class="tab-pane fade" id="tic">
+                        <div class="table-sm">
+                            <table class="table bg-dark text-light" >
+                                <tr class="bg-light text-dark">
+                                    <th>Company</th>
+                                    <th>Position</th>                                   
+                                </tr>
+                                <tr >
+                                    <td>Travelers Insurance Companies</td>
+                                    <td>Subrogation Claim Professional</td>                                             
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="presleader">
+                        <div class="table-sm">
+                            <table class="table bg-dark text-light" >
+                                <tr class="bg-light text-dark">
+                                    <th>Company</th>
+                                    <th>Position</th>                                   
+                                </tr>
+                                <tr >
+                                    <td>Preservation Society of Newport County</td>
+                                    <td>Team Leader</td>                                             
+                                </tr>
+                            </table>
+                        </div>
+                    </div>     
+                    <div role="tabpanel" class="tab-pane fade " id="presguide">
+                        <div class="table-sm">
+                            <table class="table bg-dark text-light" >
+                                <tr class="bg-light text-dark">
+                                    <th>Company</th>
+                                    <th>Position</th>                                   
+                                </tr>
+                                <tr >
+                                    <td>Preservation Society of Newport County</td>
+                                    <td>Tour Guide/Host 12</td>                                             
+                                </tr>
+                            </table>
+                        </div>                        
+                    </div>                
+                    <!-- <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pro">Clear</button> -->
+                </div>
+            </div>
+
+            
+            <!-- <div class="row">
+                <div class="table-sm">
+                    <h2 class="wbg">Professional Background</h2>
+                    
+                        <tr>
+                            <td>Preservation Society of Newport County</td>
+                            <td>Team Leader</td>
+                            <td>2015-2016</td>
+        
+                        </tr>
+                        <tr>
+                            <td>Preservation Society of Newport County</td>
+                            <td>Tour Guide/Host 12</td>
+                            <td>2012-2015</td>
+                        </tr>
+                    </table>
+                </div> -->
+            
+        </main>
+            
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center text-light">
+                        <h2>Contact Me</h2>                       
+                        <a  href="mailto:jstl35@comcast.net"><i class="fa-solid fa-envelope fa-lg text-success"></i></a> Jstl35@comcast.net <br>
+                        <i class="fa-solid fa-phone fa-lg text-success" ></i> (508)837-7843 <br>
+                        <!-- <a href="https://www.linkedin.com/in/joshua-st-laurent-02b273139/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" ></i>  </a>                          -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+ 
+</html>
